@@ -16,7 +16,7 @@ const ServiceData = [
         src: ser2,
         icon: <FaCoffee style={{ color: "rgba(44, 11, 11, 0.863)" }} />,
         title: 'Fresh Coffee Beans',
-        text: 'Our commitment to quality ensures every cup is symphony of rich flavours and aromatic delight. Elevate your coffee experience with us',
+        text: 'Our commitment to quality ensures every cup is a rich flavours and aromatic delight. Elevate your coffee experience with us',
     },
     {
         src: ser3,

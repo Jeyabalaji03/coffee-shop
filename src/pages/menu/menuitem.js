@@ -20,19 +20,19 @@ const MenuItem = [
         id: 2,
         name: 'Ginger Tea',
         src: gingertea,
-        price: 20,
+        price: 25,
     },
     {
         id: 3,
         name: 'Black Tea',
         src: blacktea,
-        price: 20,
+        price: 15,
     },
     {
         id: 4,
         name: 'Green Tea',
         src: greentea,
-        price: 20,
+        price: 25,
     }, 
     {
         id: 5,
@@ -51,25 +51,25 @@ const MenuItem = [
         id: 7,
         name: 'Filter Coffee',
         src: filtercoffee,
-        price: 20,
+        price: 25,
     },
     {
         id: 8,
         name: 'Black Coffee',
         src: blackcoffee,
-        price: 20,
+        price: 15,
     }, 
     {
         id: 9,
         name: 'Cold Coffee',
         src: coldcoffee,
-        price: 20,
+        price: 35,
     },
     {
         id: 10,
         name: 'Cold Coffee with Icecream',
         src: coldcoffeecream,
-        price: 20,
+        price: 50,
     },
 
 ]

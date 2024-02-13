@@ -10,7 +10,7 @@ const Service = () => {
         <h1>Fresh & Organic Beans</h1>
       </div>
       <Container>
-        <Row xs={1} md={1} lg={2} xl={2} className="g-4 px-5" >
+        <Row xs={1} sm={1} md={1} lg={2} xl={2} className="g-4 px-5" >
           <ServiceCard />
         </Row>
       </Container>
@@ -25,12 +25,12 @@ const ServiceCard = () => {
       {ServiceData.map((item, index) => (
         <Col key={index}>
           <Row>
-            <Col sm={12} md={5} lg={5}>
+            <Col xs={12} sm={5} md={5} lg={5}>
               <Card className='service-img'>
                 <img src={item.src} alt='' />
               </Card>
             </Col>
-            <Col sm={12} md={7} lg={7} className='service-content'>
+            <Col xs={12} sm={7} md={7} lg={7} className='service-content'>
               <h2>{item.icon} &nbsp; {item.title}</h2>
               <p>{item.text}</p>
             </Col>

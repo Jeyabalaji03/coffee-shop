@@ -16,19 +16,19 @@ const Flavours = () => {
     return (
         <div className='flavours py-5 mb-4'>
             <div className='titles'>
-                <h3>We have different flavours to choose from</h3>
-                <h2>Choose your sytle / Choose your flavour</h2>
-                </div>
+                <h3>Our flavours</h3>
+                <h1>Choose your sytle / flavour</h1>
+            </div>
             <Container>
                 <Row>
-                    <Col sm={6} lg={3}><img src={img1} alt='' /></Col>
-                    <Col sm={6}lg={3}><img src={img2} alt='' /></Col>
-                    <Col sm={6} lg={3}><img src={img3} alt='' /></Col>
-                    <Col sm={6} lg={3}><img src={img4} alt='' /></Col>
-                    <Col sm={6} lg={3}><img src={img5} alt='' /></Col>
-                    <Col sm={6} lg={3}><img src={img6} alt='' /></Col>
-                    <Col sm={6} lg={3}><img src={img7} alt='' /></Col>
-                    <Col sm={6} lg={3}><img src={img8} alt='' /></Col>
+                    <Col xs={6} md={4} lg={3}><img src={img1} alt='' /></Col>
+                    <Col xs={6} md={4} lg={3}><img src={img2} alt='' /></Col>
+                    <Col xs={6} md={4} lg={3}><img src={img3} alt='' /></Col>
+                    <Col className='flavour-item' xs={6} lg={3}><img src={img4} alt='' /></Col>
+                    <Col className='flavour-item' xs={6} lg={3}><img src={img5} alt='' /></Col>
+                    <Col xs={6} md={4} lg={3}><img src={img6} alt='' /></Col>
+                    <Col xs={6} md={4} lg={3}><img src={img7} alt='' /></Col>
+                    <Col xs={6} md={4} lg={3}><img src={img8} alt='' /></Col>
                 </Row>
             </Container>
         </div>

@@ -13,8 +13,7 @@ const Home = () => {
   return (
     <>
       <div id="home">
-        <div className='home-img'></div>
-        <div className='home-content text-center'>
+        <div className='home-content'>
           <h1>rest <span><FaCoffee /></span> relax <span><FaCoffee /></span> revive</h1>
           <p>time to Discover the perfect blend</p>
           <Button variant="secondary" onClick={() => Navigate("/menu")}> See our Menu </Button>

@@ -4,40 +4,53 @@
     font-weight: bold;
 }
 
+body {
+    margin-top: 50px;
+}
+
 :root {
     --primary-clr: #33211D;
     --secondary-clr: #e7a75d;
 }
 
-#home {
-    position: relative;
-    text-align: center;
-}
-
-#home::after {
-    content: '';
+::after,
+::before {
     position: absolute;
+    content: "";
     width: 100%;
     height: 15px;
     left: 0;
+    z-index: 1;
+}
+
+Button{
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    padding-inline: 15px !important;
+    padding-block:10px !important;
+}
+
+#home {
+    position: relative;
+    background: linear-gradient(rgba(73, 73, 73, 0.5), rgba(68, 68, 68, 0.4)), url(./Assets/bg\ \(4\).jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 580px;
+}
+
+#home::after {
     bottom: -1px;
     background: url(./Assets/overlay-bottom.png);
 }
 
 
-.home-img {
-    background: linear-gradient(rgba(73, 73, 73, 0.5), rgba(68, 68, 68, 0.4)), url(./Assets/bg\ \(4\).jpg);
-    background-position: center;
-    background-size: cover;
-    height: 580px;
-}
-
 .home-content {
-    color: white;
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
 }
 
 #home h1 {
@@ -52,7 +65,7 @@
 
 #home p {
     text-transform: capitalize;
-    font-size: clamp(15px, 2vw, 25px);
+    font-size: clamp(17px, 4vw, 25px);
 }
 
 .titles {
@@ -74,59 +87,60 @@
 #about h1 {
     color: var(--primary-clr);
     font-weight: bolder;
-    font-size: clamp(35px, 4vw, 55px);
+    font-size: clamp(30px, 9vw, 50px);
 }
 
 #about h3 {
     color: var(--secondary-clr);
-    font-weight: 650;
+    font-weight: 600;
     letter-spacing: 2.5px;
     padding-block: 10px;
-    font-size: clamp(23px, 6vw, 30px);
+    font-size: clamp(25px, 7vw, 30px);
 }
 
 #about .about-txt {
     font-weight: 600;
 }
 
-#about h4 {
-    color: var(--primary-clr);
-
+#about img {
+    height: clamp(70%, 95%, 95%);
+    width: clamp(75%, 100%, 100%);
 }
 
+#about h4 {
+    font-size: clamp(23px, 25px, 28px);
+    color: var(--primary-clr);
+}
+
+#about p {
+    font-size: clamp(15px, 18.5px, 19px);
+    font-weight: normal;
+}
 
 .flavours {
     text-align: center;
 }
 
 .flavours h3 {
+    text-transform: uppercase;
     color: var(--secondary-clr);
-    font-weight: 650;
-    padding-block: 20px;
-    font-size: clamp(15px, 2vw, 30px);
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    padding-block: 10px;
+    font-size: clamp(25px, 7vw, 30px);
 }
 
-.flavours h2 {
+.flavours h1 {
     color: var(--primary-clr);
-    font-weight: 800;
-    letter-spacing: 2.3px;
-    text-transform: uppercase;
-    font-size: clamp(25px, 3vw, 35px);
+    font-weight: bolder;
+    font-size: clamp(30px, 7vw, 50px);
 }
 
 #offer {
     position: relative;
-    text-align: center;
-}
-
-#offer::after,
-#offer::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 15px;
-    left: 0;
-    z-index: 1;
+    background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(./Assets/bg.jpg);
+    background-size: cover;
+    height: 400px;
 }
 
 #offer::after {
@@ -139,25 +153,28 @@
     background: url(./Assets/overlay-top.png);
 }
 
-.offer-img {
-    background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(./Assets/bg.jpg);
-    background-size: cover;
-    height: 400px;
-}
-
 .offer-content {
-    color: white;
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
 }
 
+.offer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-form-input {
+    width: 30%;
+}
 
 .offer-content h2 {
     text-transform: capitalize;
     font-weight: bold;
-    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
 }
 
 .offer-content h1 {
@@ -170,7 +187,7 @@
 #service h1 {
     color: var(--primary-clr);
     font-weight: bolder;
-    font-size: clamp(35px, 4vw, 55px);
+    font-size: clamp(30px, 9vw, 50px);
 }
 
 #service h3 {
@@ -178,7 +195,7 @@
     font-weight: 600;
     letter-spacing: 2.5px;
     padding-block: 10px;
-    font-size: clamp(23px, 3vw, 30px);
+    font-size: clamp(25px, 7vw, 30px);
 }
 
 .service-img img {
@@ -188,45 +205,49 @@
 
 .service-content h2 {
     color: var(--primary-clr);
-    font-weight: 700;
+    font-weight: 750;
     padding-block: 5px;
-    font-size: clamp(23px, 3vw, 30px);
+    font-size: clamp(25px, 3vw, 30px);
 }
+
+.service-content p {
+    font-weight: normal;
+    font-size: clamp(18px, 1.3vw, 25px);
+}
+
+/* booking section */
 
 #booking {
     position: relative;
-    overflow: hidden;
-}
-
-.booking-img {
     background: linear-gradient(rgba(73, 73, 73, 0.5), rgba(68, 68, 68, 0.4)), url(./Assets/bg\ \(1\).jpg);
     background-size: cover;
     height: 600px;
 }
 
 .booking-content {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .booking-content h1 {
     margin-top: 15%;
-    color: var(--primary-clr);
+    color: var(--secondary-clr);
     text-transform: uppercase;
     font-size: clamp(2.8rem, 7vw, 4.5rem);
     font-weight: 750;
 }
 
 .booking-content h2 {
-    color: var(--secondary-clr);
+    color: var(--primary-clr);
     font-weight: 700;
-    font-size: clamp(25px, 3.5vw, 35px);
-
+    font-size: clamp(27px, 3.5vw, 38px);
 }
 
 .booking-content p {
     color: white;
-    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 500;
+    font-size: clamp(16px, 1.8vw, 23px);
 }
 
 .booking-form {
@@ -236,31 +257,81 @@
 }
 
 #booking::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 15px;
-    left: 0;
-    z-index: 1;
     bottom: -1px;
     background: url(./Assets/overlay-bottom.png);
 }
 
+/* /booking section */
+
+.cart-item {
+    position: relative;
+}
+
+.cart-item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    color: white;
+    background: var(--secondary-clr);
+    height: 13px;
+    width: 13px;
+    font-size: 10px;
+    border-radius: 50%;
+}
+
+.cart {
+    margin-bottom: 10%;
+}
+
+.cart h1 {
+    text-align: center;
+    color: var(--primary-clr);
+    font-weight: bolder;
+    padding-block: 20px;
+    font-size: clamp(30px, 9vw, 50px);
+}
 
 .cart-list .cart-txt {
     font-size: clamp(20px, 2.3vw, 35px);
 }
 
 .footer {
-    text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .footer h3 {
     color: var(--primary-clr);
     font-size: clamp(20px, 2.3vw, 35px);
-    font-weight: 600;
+    font-weight: bold;
     margin-block: 30px;
+}
+
+.footer p {
+    margin-left: 5%;
+    font-weight: 500;
+    font-size: clamp(16px, 1.205vw, 21px);
+}
+
+
+@media screen and (max-width:768px) {
+
+    .offer-form-input {
+        width: 50%;
+    }
+
+    #booking {
+        height: 1000px;
+    }
+
+    .booking-content h1 {
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 5%;
+    }
+
 }
 
 @media screen and (max-width:950px) {
@@ -274,11 +345,8 @@
         top: 4%;
     }
 
-    .booking-img {
-        height: 1000px;
+    .flavour-item {
+        display: none;
     }
 
-    .booking-content {
-        text-align: center;
-    }
 }

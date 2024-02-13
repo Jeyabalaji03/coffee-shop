@@ -40,7 +40,20 @@ export const ContextProvider = (props) => {
     return totalAmount;
   }
 
-  const contextvalue = { cartItem, AddtoCart, RemoveCart, TotalCartAmount }
+  const TotalCartCount = () => {
+    let cartCount = 0;
+
+    for (const item in cartItem) {
+      if (cartItem[item] > 0) {
+        let itemInfo = MenuItem.find((list) => list.id)
+        cartCount += cartItem[item] * itemInfo.id;
+      }
+    }
+    return cartCount;
+  }
+
+
+  const contextvalue = { cartItem, AddtoCart, RemoveCart, TotalCartAmount,TotalCartCount }
 
 
   return (

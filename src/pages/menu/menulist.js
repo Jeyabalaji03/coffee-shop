@@ -16,13 +16,13 @@ const MenuList = (props) => {
                 <Card id='card'>
                     <Card.Body>
                         <Row>
-                            <Col xs={6} sm={5}>
+                            <Col xs={6} sm={5} md={6} lg={5}>
                                 <Card.Img src={src} style={{ height: '150px' }} />
                             </Col>
-                            <Col xs={6} sm={7}>
+                            <Col xs={6} sm={7} md={6} lg={7}>
                                 <Card.Title className='menu-txt'>{name}</Card.Title>
                                 <Card.Text>{price} Rupees</Card.Text>
-                                <Button variant="secondary" onClick={() => AddtoCart(id)}>
+                                <Button variant="dark" onClick={() => AddtoCart(id)}>
                                     AddtoCart {cartItemAmount > 0 && <>({cartItemAmount})</>}
                                 </Button>
                             </Col>

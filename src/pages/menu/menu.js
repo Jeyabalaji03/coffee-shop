@@ -8,15 +8,14 @@ const Menu = () => {
   return (
     <div>
       <div id="menu">
-        <div className="menu-img"></div>
         <div className="menu-content">
           <h1>Menu Items</h1>
           <h2>We have different flavors to choose from</h2>
-          <h4>Choose your style / choose your flavor </h4>
+          <h4>Choose your different style</h4>
         </div>
       </div>
-      <Container>
-        <Row xs={1} lg={2}>
+      <Container className="mt-5">
+        <Row xs={1} md={2} lg={2}>
           {MenuItem.map((item, index) => (
             <MenuList data={item} key={index} />
           ))}

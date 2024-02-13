@@ -1,4 +1,4 @@
-import { Col, Container, Row, Button } from 'react-bootstrap';
+import { Col, Container, Row} from 'react-bootstrap';
 import img from '../Assets/about.png';
 
 
@@ -26,24 +26,22 @@ const About = () => {
             </div>
             <Container>
                 <Row>
-                    <Col sm={12} lg={4}>
+                    <Col sm={12} md={6} lg={4}>
                         <h3>{head}</h3>
                         <h4>{txt1}</h4>
                         <p>{txt}</p>
-                        <Button variant="secondary">Learn More</Button>
                     </Col>
 
-                    <Col sm={12} lg={4}>
-                        <img src={img} alt="" height="95%" width="100%" />
+                    <Col sm={12} md={6} lg={4}>
+                        <img src={img} alt=""  />
                     </Col>
-                    <Col sm={12} lg={4}>
+                    <Col className='d-sm-none d-lg-block' sm={6} md={6} lg={4}>
                         <h3>{head1}</h3>
                         <p>{txt3}</p>
-                        <h6>Community hub</h6>
-                        <h6>catalyst for connection</h6>
-                        <h6>customer-Centric approach</h6>
+                        <h5>Community hub</h5>
+                        <h5>catalyst for connection</h5>
+                        <h5>customer-Centric approach</h5>
                         <br />
-                        <Button variant="secondary">Learn More</Button>
                     </Col>
                 </Row>
             </Container>

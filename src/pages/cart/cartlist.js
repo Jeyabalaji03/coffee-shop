@@ -26,9 +26,9 @@ const CartList = (props) => {
             </Col>
             <Col xs={12} sm={4} className="cart-text" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <Card.Text>
-                <Button variant="secondary" onClick={() => AddtoCart(id)}>+</Button> &nbsp;
+                <Button variant="dark" onClick={() => AddtoCart(id)}>+</Button> &nbsp;
                 <span>{cartItem[id]}</span> &nbsp;
-                <Button variant="secondary" onClick={() => RemoveCart(id)}>- </Button>
+                <Button variant="dark" onClick={() => RemoveCart(id)}>- </Button>
               </Card.Text>
             </Col>
           </Row>

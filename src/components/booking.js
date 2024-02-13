@@ -10,18 +10,17 @@ const Booking = () => {
     return (
         <>  
         <div id='booking'>
-            <div className='booking-img'></div>
-            <Container>
-                <div className='booking-content mt-5'>
+            <Container className='booking-content'>
                     <Row>
-                        <Col lg={6}>
+                        <Col md={6} lg={6}>
                             <h1>30% off</h1>
                             <h2>For Online Reservation</h2>
                             <p>Confirm your Reservationand proceed to checkout.</p>
                             <p>Input the code RESERVE30 to unlock a delightful 30% off your entire order</p>
                             <p>Arrive on the reserved date and let our exceptional brews and inviting atmosphere elevate your coffee experience.</p>
                         </Col>
-                        <Col lg={4} className='booking-form'>
+                        <Col className='d-none d-lg-block' lg={1}></Col>
+                        <Col md={6} lg={5} className='booking-form'>
                             <h2 className='text-center py-2'>Book Your Table</h2>
                             <FloatingLabel controlId='flotinginput' label='Name' className='mb-3'>
                                 <Form.Control type='text' placeholder='enter name' />
@@ -41,7 +40,6 @@ const Booking = () => {
                             <Button variant='dark' onClick={()=>navigate('/')}>Book Now</Button>
                         </Col>
                     </Row>
-                </div>
             </Container>
         </div >
         </>
