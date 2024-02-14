@@ -31,9 +31,9 @@ function Cart() {
         {totalAmount > 0 ?
           <section className='text-center mt-3'>
             <h5 className='p-3'> Total Amount : {totalAmount} Rupees</h5>
-            <div className='g-3'>
-              <Button variant="dark" onClick={() => Navigate('/menu')}>Continue Shopping</Button>&nbsp;
-              <Button variant='dark' onClick={() => Navigate('/')}>Proceed to Buy</Button>
+            <div>
+              <Button variant="dark" onClick={() => Navigate('/menu')}>Continue Shopping</Button>&nbsp;&nbsp;
+              <Button variant="dark" onClick={() => Navigate('/')}>Proceed to Buy</Button>
             </div>
           </section> : <div className='text-center'>
             <h3 className='text-center py-4'> Your Cart is empty</h3>

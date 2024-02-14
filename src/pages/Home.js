@@ -1,7 +1,7 @@
-import { Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap';
 import { FaCoffee } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'
-import About from './About'
+import { useNavigate } from 'react-router-dom';
+import About from './About';
 import { Service } from './service/service';
 import Offer from '../components/offer';
 import Flavours from '../components/flavours';

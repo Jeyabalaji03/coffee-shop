@@ -13,21 +13,11 @@ body {
     --secondary-clr: #e7a75d;
 }
 
-::after,
-::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 15px;
-    left: 0;
-    z-index: 1;
-}
-
-Button{
-    font-weight: 600 !important;
-    border-radius: 10px !important;
-    padding-inline: 15px !important;
-    padding-block:10px !important;
+.btn {
+    border-radius: 13px;
+    font-weight: 600;
+    padding-inline: 15px;
+    padding-block: 10px;
 }
 
 #home {
@@ -40,6 +30,12 @@ Button{
 }
 
 #home::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
     bottom: -1px;
     background: url(./Assets/overlay-bottom.png);
 }
@@ -98,22 +94,19 @@ Button{
     font-size: clamp(25px, 7vw, 30px);
 }
 
-#about .about-txt {
-    font-weight: 600;
-}
-
 #about img {
-    height: clamp(70%, 95%, 95%);
-    width: clamp(75%, 100%, 100%);
+    height: clamp(60%, 90%, 95%);
+    width: clamp(65%, 100%, 100%);
 }
 
 #about h4 {
-    font-size: clamp(23px, 25px, 28px);
+    font-weight: 700;
+    font-size: clamp(25px, 28px, 31px);
     color: var(--primary-clr);
 }
 
 #about p {
-    font-size: clamp(15px, 18.5px, 19px);
+    font-size: clamp(17px, 21px, 22px);
     font-weight: normal;
 }
 
@@ -136,11 +129,34 @@ Button{
     font-size: clamp(30px, 7vw, 50px);
 }
 
+.flavour-img{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.flavours img {
+    height: 80%;
+    width: 75%;
+}
+
+
 #offer {
     position: relative;
     background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url(./Assets/bg.jpg);
     background-size: cover;
     height: 400px;
+}
+
+#offer::after,
+#offer::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
 }
 
 #offer::after {
@@ -197,9 +213,18 @@ Button{
     padding-block: 10px;
     font-size: clamp(25px, 7vw, 30px);
 }
+.service-img{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
 
 .service-img img {
-    overflow: hidden;
+    height: 90%;
+    width: 95%;
     border-radius: 5px;
 }
 
@@ -207,12 +232,12 @@ Button{
     color: var(--primary-clr);
     font-weight: 750;
     padding-block: 5px;
-    font-size: clamp(25px, 3vw, 30px);
+    font-size: clamp(26px, 4vw, 30px);
 }
 
 .service-content p {
     font-weight: normal;
-    font-size: clamp(18px, 1.3vw, 25px);
+    font-size: clamp(18px, 1vw, 19px);
 }
 
 /* booking section */
@@ -235,19 +260,19 @@ Button{
     color: var(--secondary-clr);
     text-transform: uppercase;
     font-size: clamp(2.8rem, 7vw, 4.5rem);
-    font-weight: 750;
+    font-weight: bolder;
 }
 
 .booking-content h2 {
     color: var(--primary-clr);
-    font-weight: 700;
-    font-size: clamp(27px, 3.5vw, 38px);
+    font-weight: 800;
+    font-size: clamp(27px, 4vw, 38px);
 }
 
 .booking-content p {
     color: white;
     font-weight: 500;
-    font-size: clamp(16px, 1.8vw, 23px);
+    font-size: clamp(18px, 21px, 22px);
 }
 
 .booking-form {
@@ -257,6 +282,12 @@ Button{
 }
 
 #booking::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
     bottom: -1px;
     background: url(./Assets/overlay-bottom.png);
 }
@@ -273,7 +304,7 @@ Button{
     align-items: center;
     position: absolute;
     top: 50%;
-    right: 0%;
+    right: -45%;
     color: white;
     background: var(--secondary-clr);
     height: 13px;
@@ -295,7 +326,9 @@ Button{
 }
 
 .cart-list .cart-txt {
-    font-size: clamp(20px, 2.3vw, 35px);
+    font-weight: 700;
+    color:var(--primary-clr);
+    font-size: clamp(20px, 2vw, 30px);
 }
 
 .footer {
@@ -329,9 +362,8 @@ Button{
     .booking-content h1 {
         text-align: center;
         padding-bottom: 10px;
-        margin-top: 5%;
+        margin-top: 1%;
     }
-
 }
 
 @media screen and (max-width:950px) {
@@ -344,9 +376,4 @@ Button{
         height: 80px;
         top: 4%;
     }
-
-    .flavour-item {
-        display: none;
-    }
-
 }

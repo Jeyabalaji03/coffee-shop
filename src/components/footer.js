@@ -30,9 +30,9 @@ const Footer = () => {
           <Col xs={12} sm={6} lg={3}>
             <h3>Newsletter</h3>
             <p>Subscribe to our Newsletter and be the first to savour exclusive updates, special promotions.</p>
-            <Form className="d-flex px-2">
-              <Form.Control type="search" placeholder="Enter Email" className="me-1" aria-label="Enter Email" />
-              <Button variant="dark">SignUp</Button>
+            <Form className="d-flex">
+              <Form.Control type="search" placeholder="Enter Email" aria-label="Enter Email" />
+              <Button variant="dark" className='ms-2'>SignUp</Button>
             </Form>
           </Col>
         </Row>

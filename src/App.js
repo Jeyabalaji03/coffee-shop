@@ -1,11 +1,11 @@
 import './App.css'
 import { ContextProvider } from './context/Context';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navbar';
 import Home from './pages/Home';
 import Menu from "./pages/menu/menu";
 import Cart from './pages/cart/cart';
-import Footer from './pages/Footer';
+import Footer from './components/footer';
 import Booking from './components/booking';
 
 
@@ -13,7 +13,7 @@ import Booking from './components/booking';
 const App = () => {
   return (
     <>
-      <ContextProvider>
+       <ContextProvider>
         <Router>
           <Navigation />
           <Routes>

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import img1 from '../Assets/image1x3.png'
 import img2 from '../Assets/image3x3.png'
@@ -21,14 +20,14 @@ const Flavours = () => {
             </div>
             <Container>
                 <Row>
-                    <Col xs={6} md={4} lg={3}><img src={img1} alt='' /></Col>
-                    <Col xs={6} md={4} lg={3}><img src={img2} alt='' /></Col>
-                    <Col xs={6} md={4} lg={3}><img src={img3} alt='' /></Col>
-                    <Col className='flavour-item' xs={6} lg={3}><img src={img4} alt='' /></Col>
-                    <Col className='flavour-item' xs={6} lg={3}><img src={img5} alt='' /></Col>
-                    <Col xs={6} md={4} lg={3}><img src={img6} alt='' /></Col>
-                    <Col xs={6} md={4} lg={3}><img src={img7} alt='' /></Col>
-                    <Col xs={6} md={4} lg={3}><img src={img8} alt='' /></Col>
+                    <Col xs={6} md={4} lg={3}><div className='flavour-img'><img src={img1} alt='' /></div></Col>
+                    <Col xs={6} md={4} lg={3}><div className='flavour-img'><img src={img2} alt='' /></div></Col>
+                    <Col xs={6} md={4} lg={3}><div className='flavour-img'><img src={img3} alt='' /></div></Col>
+                    <Col className='d-none d-lg-block' xs={6} lg={3}><div className='flavour-img'><img src={img4} alt='' /></div></Col>
+                    <Col className='d-none d-lg-block' xs={6} lg={3}><div className='flavour-img'><img src={img5} alt='' /></div></Col>
+                    <Col xs={6} md={4} lg={3}><div className='flavour-img'><img src={img6} alt='' /></div></Col>
+                    <Col xs={6} md={4} lg={3}><div className='flavour-img'><img src={img7} alt='' /></div></Col>
+                    <Col xs={6} md={4} lg={3}><div className='flavour-img'><img src={img8} alt='' /></div></Col>
                 </Row>
             </Container>
         </div>

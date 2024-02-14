@@ -13,8 +13,8 @@ const MenuList = (props) => {
     return (
         <>
             <Col className='p-3'>
-                <Card id='card'>
-                    <Card.Body>
+                <Card>
+                    <Card.Body className='p-2 rounded'>
                         <Row>
                             <Col xs={6} sm={5} md={6} lg={5}>
                                 <Card.Img src={src} style={{ height: '150px' }} />

@@ -9,6 +9,12 @@
 }
 
 #menu::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
     bottom: -1px;
     background: url(../../Assets/overlay-bottom.png);
 }
@@ -41,5 +47,6 @@
 
 .menu-txt{
     color:var(--primary-clr);
-    font-size: clamp(20px,3vw,1.5rem);
+    font-weight: bold;
+    font-size: clamp(19px,2.7vw,1.4rem);
 }

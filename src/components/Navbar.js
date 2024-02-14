@@ -24,10 +24,11 @@ function Navigation() {
               <Nav.Link className='me-3' as={Link} to='/'>Home</Nav.Link>
               <Nav.Link className='me-3' as={Link} to='/menu'>Menu</Nav.Link>
               <Nav.Link className='me-3' as={Link} to='/booking'>Booking</Nav.Link>
-              <Nav.Link className='cart-item' as={Link} to='/cart'>
+              <Nav.Link as={Link} to='/cart'>
+                <div className='cart-item'>
                   <FaCartArrowDown />
                   <span>{cartCount}</span>
-                
+                </div>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
