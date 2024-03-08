@@ -16,7 +16,7 @@ const Flavours = () => {
         <div className='flavours py-5 mb-4'>
             <div className='titles'>
                 <h3>Our flavours</h3>
-                <h1>Choose your sytle / flavour</h1>
+                <h1>Choose your style / flavour</h1>
             </div>
             <Container>
                 <Row>

@@ -303,8 +303,8 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
-    right: -45%;
+    top: 0%;
+    right: -50%;
     color: white;
     background: var(--secondary-clr);
     height: 13px;
@@ -333,6 +333,7 @@ body {
 
 .footer {
     margin-top: 10%;
+    padding-block: 35px;
 }
 
 .footer h3 {
